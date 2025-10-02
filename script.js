@@ -8,7 +8,9 @@ toons.forEach(function(t) {
         const toonLine = document.createElement("li")
         toonLine.style.listStyleType = 'none'
 
-        toonLine.innerText = t
+        const toonIndex = toons.indexOf(t) + 1
+
+        toonLine.innerText = toonIndex + '. ' + t
 
         toonList.appendChild(toonLine)
     })
